@@ -1,0 +1,11 @@
+anagha_dbt_poc:
+  outputs:
+    dev:
+      aws_profile_name: anagha_dbt_poc
+      database: awsdatacatalog
+      region_name: ap-south-1
+      s3_staging_dir: s3://query-data-ecommerce/
+      schema: raw_data
+      type: athena
+      work_group: primary
+  target: dev
